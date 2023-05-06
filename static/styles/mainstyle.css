@@ -1,6 +1,6 @@
-:root{
-    --shadow:0 4px 6px -px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-} 
+:root {
+    --shadow: 0 4px 6px -px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 
 
 body {
@@ -8,47 +8,72 @@ body {
 
 }
 
-#logo{
-   display: block;
-   width: 100px; 
-   margin: 0 auto; 
+#logo {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
 }
 
-#form-container{
-      width: 400px;
-      box-shadow: var(--shadow);
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 5px;
-      position:   fixed;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+#form-container {
+    width: 400px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*-------------ROOM STYLING----------------*/
-#video-streams{
-   display: flex;
-   flex-wrap: wrap;
-   height: 85vh;
-   width: 75%;
-   margin: 0 auto;
+#video-streams {
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 75%;
+    margin: 0 auto;
 
 }
 
 
-.video-container{
-     flex-basis:500px;
-     flex-grow:1;
-     max-height: 100%;
-     min-height: 350px;
-     border: 1px solid rgb(83, 98, 159);
-     border-radius: 50ps;
-     margin: 2px;
-     background-color: rgba(198, 202, 219, 1);
+.video-container {
+    flex-basis: 500px;
+    flex-grow: 1;
+    max-height: 100%;
+    min-height: 350px;
+    border: 1px solid rgb(83, 98, 159);
+    border-radius: 50ps;
+    margin: 2px;
+    background-color: rgba(198, 202, 219, 1);
 }
 
-.video-player{
+.video-player {
     height: 100%;
     width: 100%;
+}
+
+/* ---------- ROOM STYLE/CONTROLS ----------*/
+
+#controls-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 1em;
+    position: fixed;
+    bottom: 20px;
+}
+
+.control-icon {
+    height: 20px;
+    width: 20px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#leave-btn {
+    background-color: rgb(221, 26, 26);
 }
