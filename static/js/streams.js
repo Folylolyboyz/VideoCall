@@ -49,7 +49,7 @@ let handleuserjoined = async (user, mediaType) => {
         let member = await getMember(user)
 
         player = `<div class="video-container" id="user-container-${user.uid}">
-                <div class="username-wrapper><span class="user-name">${member.name}</span></div>
+                <div class="username-wrapper"><span class="user-name">${member.name}</span></div>
                 <div class="video-player" id="user-${user.uid}"></div>
                 </div>`
         document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)

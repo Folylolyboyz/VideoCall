@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: rgba(232, 233, 239, 1);
+    background-color: rgb(22, 115, 230);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,9 +21,9 @@ body {
 #form-container {
     width: 400px;
     box-shadow: var(--shadow);
-    background-color: #fff;
+    background-color: rgb(109, 171, 248);
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -54,10 +54,15 @@ body {
 
 .form-field input {
     width: 100%;
-    border: 2px solid rgba(198, 202, 219, 1);
-    border-radius: 5px;
+    border: 2px solid rgb(184, 194, 241);
+    text-align: center;
+    border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+.form-field input::placeholder {
+    text-align: center;
 }
 
 .form-field input[type='submit'] {
@@ -98,8 +103,8 @@ body {
     flex-grow: 1;
     max-height: 100%;
     min-height: 350px;
-    border: 1px solid rgb(83, 98, 159);
-    border-radius: 50ps;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
     margin: 2px;
     background-color: rgba(198, 202, 219, 1);
     position: relative;
@@ -110,8 +115,8 @@ body {
     width: 100%;
 }
 
-.video-player {
-    border-radius: 1px;
+.video-player>* {
+    border-radius: 8px;
 }
 
 .username-wrapper {
@@ -121,7 +126,7 @@ body {
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 14px;
     color: #fff;
 
@@ -130,7 +135,7 @@ body {
 @media screen and (max-width: 1650px) {
     .video-container {
         flex-basis: 300px;
-        min-height: 200;
+        min-height: 200px;
     }
 }
 

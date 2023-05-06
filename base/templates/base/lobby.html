@@ -5,22 +5,21 @@
     <section id="form-container">
       <img id="logo" src= "{% static 'images/chat-icon.png' %}" >
       <div id="welcome-message">
-         <h1>Welcome to Mychat</h1>
-         <p>A group calling application just for you!!!</p>
+         <h1>Video Call</h1>
       </div>
 
       <form id="form">
         <div class="form-field">
-          <input type="text" name="room" placeholder="Enter a room name........" style="text-transform:uppercase;" />
+          <input type="text" name="room" placeholder="Room Name" autocomplete="off" />
         </div>
 
         <form id="form">
         <div class="form-field">
-          <input type="text" name="username" placeholder="Enter your Name :........" />
+          <input type="text" name="username" placeholder="Name" autocomplete="off" />
         </div>
 
         <div class="form-field">
-          <input type="submit" value="Join Stream">
+          <input type="submit" value="Join Video Call">
         </div>
       </form>
      </section>
@@ -32,7 +31,7 @@
   let handleSubmit = async(e) => {
     e.preventDefault()
     let room= e.target.room.value.toUpperCase()
-    let name= e.target.username.value
+    let name= e.target.username.value.charAt(0).toUpperCase() + e.target.username.value.slice(1)
     let response= await fetch(`/get_token/?channel=${room}`)
     let data= await response.json()
 
