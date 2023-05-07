@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: rgb(22, 115, 230);
+    background-color: rgb(122, 182, 255);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,7 +21,7 @@ body {
 #form-container {
     width: 400px;
     box-shadow: var(--shadow);
-    background-color: rgb(109, 171, 248);
+    background-color: rgb(69, 144, 241);
     padding: 30px;
     border-radius: 10px;
     position: fixed;
@@ -161,5 +161,5 @@ body {
 }
 
 #leave-btn {
-    background-color: rgb(221, 26, 26);
+    background-color: rgb(255, 0, 0);
 }

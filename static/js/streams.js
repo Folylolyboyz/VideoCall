@@ -82,10 +82,10 @@ let leaveAndRemoveLocalStream = async () => {
 let toggleCamera = async (e) => {
     if (localTracks[1].muted) {
         await localTracks[1].setMuted(false)
-        e.target.style.backgroundColor = '#3ea4c4'
+        e.target.style.backgroundColor = '#fff'
     } else {
         await localTracks[1].setMuted(true)
-        e.target.style.backgroundColor = 'rgb(28, 161, 32)'
+        e.target.style.backgroundColor = 'rgb(255, 0, 0)'
     }
 
 }
@@ -93,10 +93,10 @@ let toggleCamera = async (e) => {
 let toggleMic = async (e) => {
     if (localTracks[0].muted) {
         await localTracks[0].setMuted(false)
-        e.target.style.backgroundColor = '#ffff00'
+        e.target.style.backgroundColor = '#fff'
     } else {
         await localTracks[0].setMuted(true)
-        e.target.style.backgroundColor = 'rgb(165, 155, 155)'
+        e.target.style.backgroundColor = 'rgb(255, 0, 0)'
     }
 
 }
