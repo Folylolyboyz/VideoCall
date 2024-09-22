@@ -1,6 +1,6 @@
 agora-token-builder==1.0.0
 asgiref==3.6.0
 backports.zoneinfo==0.2.1
-Django==4.2
+Django==4.2.15
 sqlparse==0.4.4
 tzdata==2023.3
